@@ -82,6 +82,7 @@ type signatureData struct {
 	xml            *etree.Document
 	signature      *etree.Element
 	signedInfo     *etree.Element
+	certificate    x509.Certificate
 	sigValue       string
 	sigAlgorithm   x509.SignatureAlgorithm
 	canonAlgorithm CanonicalizationAlgorithm
